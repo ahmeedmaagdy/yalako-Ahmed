@@ -1,0 +1,518 @@
+/*start global */
+*{
+    margin: 0px;
+    padding:0px;
+}
+html, body{
+    width: 100%;
+    background-color: #2c2c2c;
+}
+.fixed{
+    clear: both;
+}
+.overlay {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.3);
+    z-index:1;
+}
+/*End global */
+/*start navegation bar */
+nav {
+    width:100%;
+    height:auto;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+nav #drop-main{
+    list-style-type: none;
+    background-color: #0277bd;
+    padding: 10px;
+    float: right;
+}
+nav #drop-main li{
+    border-bottom: 3px solid white;
+    margin: auto;
+    width:30px;
+    height: 5px;
+
+}
+nav a h2{
+    text-decoration: none;
+    color: white;
+} 
+nav h2{
+    float:right;
+    font-size: 37px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+nav #rightLink{
+    float:right;
+    list-style-type: none;
+}
+nav #rightLink li{
+    display: inline-block;
+    border-right: 1px solid rgb(53, 50, 50);
+
+}
+nav #rightLink li a{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    text-align: right;
+    padding: 10px 5px;
+    font-size: 20px;
+}
+nav #rightLink li a:hover,nav #rightLink li a:active {
+    color: white;
+    background-color: #0277bd;
+}
+nav #rightLink #new {
+    position: relative;
+}
+nav #rightLink #new span{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    color: white;
+    background-color: red;
+    font-size: 10px;
+    padding: 2px 5px;
+}
+nav #icon-bar i{
+    color:white;
+    padding: 12px;
+    font-size: 20px;
+    border-right: 1px solid rgb(53, 50, 50);
+}
+/*End navegation bar  */
+/*start contaner  */
+.contaner {
+    width:85%;
+    margin: auto;
+    background-color:rgb(255, 255, 255);
+}
+/*start header */
+.contaner header {
+    width:60%;
+    margin: auto;
+    
+}
+.contaner header .fa-chevron-right,
+.contaner header .fa-chevron-left{
+    float: right;
+    font-size: 20px;
+    text-align: center;
+    padding:7% 10px;
+    background-color:#0277bd;
+    color: white;
+    height: 18px;
+
+}
+.contaner header #football-course{
+    float:right; 
+    border-right:1px solid #2c2c2c ;
+    padding: 10px;
+    color: #2c2c2c ;
+
+}
+.contaner header #football-course h3{
+    text-align: center;
+    margin-bottom:5px ;
+    
+
+}
+.contaner header #football-course #side {
+    display: inline-block;
+}
+.contaner header #football-course #side img{
+    width: 50px;
+}
+.contaner header #football-course #side p{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 20px;
+    font-size: 12px;
+    
+}
+.contaner header #football-course #maddle{
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+}
+.contaner header #football-course #maddle h4{
+    display: inline-block;
+    color: #0277bd;
+
+}
+.contaner header #football-course #maddle #right{
+    margin-left: 39px;
+}
+.contaner header #football-course #maddle p{
+    display: block;
+    background-color:rgb(10, 161, 10);
+    color: white;
+    text-align: center;
+    width: 55px;
+    margin: auto;
+    font-size: 12px;
+    
+}
+.contaner header #football-course #maddle #End{
+    background-color: black;
+}
+.contaner header #football-course #maddle span{
+    font-size: 12px;
+    color: gray;
+}
+.contaner #watched-all{
+    font-size: 16px;
+    padding: 5px;
+    margin: 10px 20px 0 20px;
+    text-align: center;
+    color: white;
+    background-color:#0277bd ;
+}
+/*End header  */
+/*start main */
+.contaner main {
+    width:100%;
+    background-color: #f2f2f2;
+    ;
+}
+.contaner main .grandf{
+    margin: 20px;
+    background-color: #2c2c2c;
+}
+.contaner main .grandf .parlist{
+    width: 25%;
+    float: left;
+    padding: 20px;
+    background-color: white;
+    box-shadow: -2px 3px 10px #52515159;
+    border: 1px solid #e0e0e0;
+    border-top: 4px solid #0277bd;
+}
+.contaner main .grandf .parlist h3{
+    text-align: right;
+}
+.contaner main .grandf .parlist ul{
+    list-style-type: none;
+}
+.contaner main .grandf .parlist ul li{
+    margin: 40px 0px;
+}
+.contaner main .grandf .parlist ul li span{
+    display: block;
+    width: 9%;
+    padding: 2%;
+    text-align: center;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #e8e8e8;
+    color:#0277bd;
+
+}
+.contaner main .grandf .parlist ul li p{
+    display:inline-block;
+    width: 75%;
+    text-align: right;
+    font-weight: bold;
+
+}
+.contaner main .grandf .parlist ul li p:hover{
+    color:#0277bd ;
+}
+.contaner main .grandf .parphoto{
+    width:70% ;
+    background: #f2f2f2;
+    float: right;
+}
+.contaner main .grandf .parphoto ul {
+    list-style-type: none;
+}
+.contaner main .grandf .parphoto ul li{
+    display:block;
+    text-align: right;
+    float: right;
+    width: 31.333333%;
+    margin: 1%;
+    position: relative;
+
+}
+.contaner main .grandf .parphoto ul li h4{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 25px;
+}
+.contaner main .grandf .parphoto ul li img{
+width: 100%;
+height: 100%;
+border-radius: 20px;
+}
+.contaner main .grandf .parphoto ul li p{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+}
+.contaner main .grandf .parphoto ul li:first-child{
+    width: 64%;
+    height: 332px;
+} 
+.contaner main .news{
+    background-color: #e8e8e8;
+    margin: 10px;
+    color: #000;
+    border: 1px solid #e0e0e0;
+    border-right: 4px solid #000;
+    font-size: 25px;
+    font-weight:bold ;
+}
+.contaner main .news h3{
+    float: right;
+    padding: 5px 10px;
+}
+.contaner main .news h3:hover{
+    color:#0277bd;
+}
+.contaner main .news span{
+    display:inline-block;
+    padding: 5px;
+    background-color: #0277bd;
+    color:white;
+    border-radius: 5px;
+}
+.contaner main .news span:hover{
+    background-color: #099cf167;
+}
+.contaner main .corser-England ul,
+.contaner main .KlameFekora ul{
+    list-style-type: none;
+}
+.contaner main .corser-England ul li,
+.contaner main .KlameFekora ul li{
+    display:block;
+    text-align: right;
+    float: right;
+    background-color:  white;;
+    width: 23%;
+    margin: .9%;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    position: relative;
+
+}
+.contaner main .corser-England ul li h4,
+.contaner main .KlameFekora ul li h4{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 25px;
+}
+.contaner main .corser-England ul li img,
+.contaner main .KlameFekora ul li img{
+width: 100%;
+margin-bottom:5px;
+
+}
+.contaner main .corser-England ul li p,
+.contaner main .KlameFekora ul li p{
+    display: block;
+    color: black;
+    height: 70px;
+    margin-bottom: 40px;
+    padding: 5px;
+    font-size: 20px;
+}
+.contaner main .corser-England ul li p:hover{
+    color:#099cf1;
+}
+.contaner main .corser-England ul li .icon-time span,
+.contaner main .KlameFekora ul li .icon-time span{
+    position: absolute;
+    bottom:0px;
+    right: 75px;
+    display: block;
+    font-size: 12px;
+    color: #b9b9b9;
+    float: right;
+    direction: rtl;
+    padding:0px 5px;
+}
+.contaner main .corser-England ul li .icon-time span:first-child,
+.contaner main .KlameFekora ul li .icon-time span:first-child{
+    border-left:1px solid #b9b9b9 ;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.contaner main .KlameFekora ul li:first-child{
+    width: 48%;
+    height: 627px;
+    font-weight: bold;
+    text-shadow: 0px 9px 5px gray;
+
+}
+.contaner main .mida{
+    background: #f2f2f2;
+    float: right;
+}
+.contaner main .mida ul {
+    list-style-type: none;
+}
+.contaner main .mida ul li{
+    display:block;
+    text-align: right;
+    float: right;
+    width: 24%;
+    margin: .5%;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+
+}
+.contaner main .mida ul li h4{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: white;
+    padding-left:10px ;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.8);
+}
+.contaner main .mida ul li h4 i{
+    background-color:#db182c;
+    padding: 5px 15px;
+    margin-left:5px ;
+}
+.contaner main .mida ul li img{
+width: 100%;
+height: 100%;
+}
+.contaner main .mida ul li p{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    z-index: 2;
+}
+.contaner main .mida ul li:first-child{
+    width: 49%;
+    height: 411px;
+}
+.contaner main .kalamFeKra{
+    display: block;
+}
+.contaner main .kalamFeKra ul{
+    list-style-type:none;
+    background-color: yellowgreen;
+}
+.contaner main .kalamFeKra ul li{
+    display:block;
+    text-align: right;
+    float: right;
+    background-color:  white;;
+    width: 23%;
+    margin: .9%;
+    position: relative;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    position: relative;
+}
+
+/*End main  */
+/*start footer */
+ footer {
+    position: sticky;
+    width:100%;
+    background-color: rgb(0, 0, 0);
+    z-index:6;
+
+}
+ footer .contaner .Championships{
+    background-color: rgb(0, 0, 0);
+    text-align: right;
+    direction: rtl;
+    color: white;
+    padding: 10px;
+}
+ footer .contaner .Championships h2{
+     font-size: 30px;
+    padding: 30px 5px ;
+
+}
+footer .contaner .Championships ul{
+    list-style-type: none;
+    padding: 0px 60px;
+    display:block;
+    float: right;
+}
+footer .contaner .Championships ul li{
+    padding: 5px 0px;
+}
+footer .contaner .Championships ul li:first-child{
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: -1px 3px 5px white;
+    padding: 10px 0;
+}
+ footer .contaner .EndFooter{
+     text-align: center;
+     background-color: black;
+     color: white;
+ }
+ footer .contaner .EndFooter h1{
+     font-size: 70px;
+     margin-bottom:30px; 
+ }
+ footer .contaner .EndFooter ul{
+     list-style-type: none;
+     padding: 0px 0px 50px 0;
+     border-bottom: 1px solid rgb(53, 50, 50);
+ }
+ footer .contaner .EndFooter ul li{
+     display: inline-block;
+
+ }
+ footer .contaner .EndFooter ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding:0px 10px;
+    border-right: 1px solid rgb(53, 50, 50);
+    color: white;
+ }
+
+ footer .contaner .EndFooter .icon-bar i{
+    padding: 10px;
+    margin: 35px 15px;
+    font-size: 30px;
+    color: white;
+    border: 1px solid rgb(53, 50, 50);
+ }
+/*End footer  */
+/*End contaner  */

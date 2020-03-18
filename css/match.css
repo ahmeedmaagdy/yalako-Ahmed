@@ -1,0 +1,511 @@
+/*start global */
+*{
+    margin: 0px;
+    padding:0px;
+}
+html, body{
+    width: 100%;
+    background-color: #2c2c2c;
+}
+.fixed{
+    clear: both;
+}
+.right-side{
+    width: 70%;
+    float: right;
+    padding-right:5px;
+    box-sizing: border-box; 
+}
+/*End global */
+/*Start navegatin bar */
+nav {
+    width:100%;
+    height:auto;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+nav #drop-main{
+    list-style-type: none;
+    background-color: #0277bd;
+    padding: 10px;
+    float: right;
+}
+nav #drop-main li{
+    border-bottom: 3px solid white;
+    margin: auto;
+    width:30px;
+    height: 5px;
+}
+nav a h2{
+    text-decoration: none;
+    color: white;
+}
+nav h2{
+    float:right;
+    font-size: 37px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+nav #rightLink{
+    float:right;
+    list-style-type: none;
+}
+nav #rightLink li{
+    display: inline-block;
+    border-right: 1px solid rgb(53, 50, 50);
+
+}
+nav #rightLink li a{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    text-align: right;
+    padding: 10px 5px;
+    font-size: 20px;
+}
+nav #rightLink li a:hover,nav #rightLink li a:active {
+    color: white;
+    background-color: #0277bd;
+}
+nav #rightLink #new {
+    position: relative;
+}
+nav #rightLink #new span{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    color: white;
+    background-color: red;
+    font-size: 10px;
+    padding: 2px 5px;
+}
+nav #icon-bar i{
+    color:white;
+    padding: 12px;
+    font-size: 20px;
+    border-right: 1px solid rgb(53, 50, 50);
+}
+
+/*End navegatin bar */
+/*Start contaner */
+.contaner {
+    width:85%;
+    margin: auto;
+    background-color:#f2f2f2;
+}
+/*Start header */
+.contaner header{
+    width: 100%;
+}
+.contaner header .day{
+    list-style-type: none;
+    display: block;
+    padding-top:25px;
+    text-align: center;
+}
+.contaner header .day li{
+    display: inline-block;
+    padding: 5px;
+    border-top:4px solid #0277bd;
+    margin-left: 5px;
+}
+.contaner header .day li p,
+.contaner header .day li i{
+    display: inline-block;
+    background-color: white;
+    color:  #b9b9b9;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius:50%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden; 
+    padding: 5px;
+}
+.contaner header .day li p span{
+    display: block;
+}
+.contaner header .day li:first-child{
+    border:none;
+    font-size: 25px;
+    margin-right: 40px;
+}
+.contaner header .day li i{
+    color: white;
+    background-color: #0277bd;
+    padding-top: 12px;
+}
+.contaner header .day li:nth-child(5) {
+    border:none;
+}
+.contaner header .day li:nth-child(5) > p{
+    border-radius : 8px;
+    background-color: #0277bd;
+    color: white;
+    font-weight: bold;
+}
+.contaner header .day li:hover{
+    background-color: #b9b9b949;
+}
+.contaner header .day li:nth-child(5):hover,
+.contaner header .day li:first-child:hover{
+    background-color: #f2f2f2;
+}
+/*End header */
+/*Start setion */
+.contaner section{
+    width: 100%;
+}
+/* Start page bar*/
+.contaner section .right-side .start-page{
+    background-color: #e0e0e0;
+    box-sizing: border-box;
+    padding: 1%;
+    direction: rtl;
+}
+.contaner section .right-side .start-page select{
+    background-color: #0277bd;
+    color: white;
+    padding: 5px;
+    width: 130px;
+    font-weight: bold;
+    margin:0 5px;
+    border-radius:8px;
+}
+.contaner section .right-side .start-page select option{
+    padding: 20px;
+    background-color: white;
+    color: #000;
+}
+.contaner section .right-side .start-page div{
+    display: inline-block;
+    background-color: #0277bd;
+    color: white;
+    margin-right:2px;
+    padding: 5px;
+    border-radius:8px;
+
+}
+.contaner section .right-side .start-page div h5{
+    display: inline-block;
+    font-weight: bold;
+}
+.contaner section .right-side .start-page div i{
+    font-size: 12px;
+    margin-right: 50px;
+}
+.contaner section .right-side .start-page div:nth-child(3){
+    background-color: #FFF;
+    color: #000;
+    margin-right:15px;
+    padding-left:20px;
+    padding-right: 20px;  
+} 
+.contaner section .right-side .start-page div:last-child{
+    transform: translate(-165px,0px);
+    background-color: #e0e0e0;
+    color: #000
+
+}
+/* End page bar*/
+/*start section bar */
+.news{
+    background-color: #e8e8e8;
+    margin-top:10px;
+    color: #000;
+    border: 1px solid #e0e0e0;
+    border-right: 4px solid #000;
+
+}
+.news img {
+    width: 20px;
+    float: right;
+    margin-top:4px;
+    margin-right: 10px;
+}
+ .news h3{
+    float: right;
+    padding: 5px 10px;
+}
+ .news h3:hover{
+    color:#0277bd;
+}
+ .news span{
+    display:inline-block;
+    padding: 5px;
+    background-color: #0277bd;
+    color:white;
+    border-radius: 5px;
+}
+ .news span:hover{
+    background-color: #099cf167;
+}
+/*End section bar */
+/*start one report the match*/
+.report{
+    background-color: #fff;
+    margin-top:10px;
+    min-height:250px; 
+    margin-bottom:10px;
+    direction: rtl;
+    text-align: center;
+    position:relative;
+}
+/*start name of week*/
+.report .week{
+    display: inline-block;
+    position:absolute;
+    top:10px;
+    right: 10px;
+    font-family: droidLight,arial;
+    color: #b9b9b9;
+    font-size: 13px;
+    text-align: right;
+}
+/*End name of week*/
+/*start icon tv*/
+.report .fas {
+    position: absolute;
+    top:20px;
+    left:20px;
+    background-color:#c8fd00;
+    border-radius:50%;
+    box-sizing: border-box;
+    width: 29px;
+    height:29px;
+    padding-top:7px;
+}
+/*End icon tv*/
+/*start  side in report*/
+.report .side-report{
+    display:inline-block;
+    width: 21%;
+}
+.report .side-report img{
+    height: 50px;
+    width: auto;
+    border: none;
+    display: inline-block;
+}
+.report .side-report h2{
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding-top: 10px;
+    color: #0277bd;
+    font-family: droidBold,Arial;
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: center;
+}
+.report .side-report .matchScorer{
+    display: inline-block;
+    float: right;
+    width: 100%;
+    margin-top: 3px;
+    text-align:right;
+}
+.report .side-report .matchScorer  i{
+    display: inline-block;
+    margin: 0 5px;
+    font-size:20px;
+    color: #000;
+    line-height: 1.8;
+}
+.report .side-report .matchScorer  span{
+    display: inline-block;
+    margin-left: 10px;
+    font-family: Arial;
+    font-size: 14px;
+    color: #7e7e7e;
+    line-height: 1.8;
+}
+.report .side-report .matchScorer  h3{
+    display: inline-block;
+    font-family: droidLight,arial;
+    font-size: 15px;
+    color: #000;
+    line-height: 1.8;
+}
+/*End  side in report*/
+/* Start  the middle */
+.report .resultDiv {
+    display:inline-block;
+    width: 21%; 
+    height: 110px;
+    position: relative;
+}
+.report .resultDiv .matchResult{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    float: right;
+}
+.report .resultDiv .matchResult .result{
+    color: #000;
+    font-size: 32px;
+    font-family: arial;
+    display: inline-block;
+    width: 50%;
+    position: relative;
+}
+.report .resultDiv .matchResult .result:first-of-type{
+    float: right;
+    text-align: right;
+}
+.report .resultDiv .matchResult .result:first-of-type::after{
+    content: "-";
+    position: absolute;
+    left: -5px;;
+}
+.report .resultDiv .matchResult .result:last-of-type{
+    float: left;
+    text-align: left;
+}
+.report .resultDiv > h3{
+    width: 50px;
+    margin: 0 calc((100% - 50px)/ 2);
+    height: 18px;
+    display: inline-block;
+    color: #fff;
+    font-family: droidLight,Arial;
+    font-size: 14px;
+    text-align: center;
+    background-color: #000;
+}
+.report .resultDiv a{
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 24px;
+    background: #0277bd;
+    color: #fff;
+    font-family: droidLight,Arial;
+    text-align: center;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* End  the middle */
+/*End one report the match*/
+/*End right side */
+/*start lift side */
+.contaner section .left-side{
+    width: 29%;
+    float:right; 
+    margin: 100px 5px;
+}
+.contaner section .left-side .parlist{
+    padding: 20px;
+    background-color: white;
+    box-shadow: -2px 3px 10px #52515159;
+    border: 1px solid #e0e0e0;
+    border-top: 4px solid #0277bd;
+}
+.contaner section .left-side .parlist h3{
+    text-align: right;
+}
+.contaner section .left-side .parlist ul{
+    list-style-type: none;
+}
+.contaner section .left-side .parlist ul li{
+    margin: 40px 0px;
+}
+.contaner section .left-side .parlist ul li span{
+    display: block;
+    width: 9%;
+    padding: 2%;
+    text-align: center;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #e8e8e8;
+    color:#0277bd;
+
+}
+.contaner section .left-side .parlist ul li p{
+    display:inline-block;
+    width: 75%;
+    text-align: right;
+    font-weight: bold;
+
+}
+.contaner section .left-side .parlist ul li p:hover{
+    color:#0277bd ;
+}
+/*End lift side */
+/*End section */
+/*End contaner */
+/*Start Footer */
+footer {
+    position: sticky;
+    width:100%;
+    background-color: rgb(0, 0, 0);
+    z-index:6;
+
+}
+ footer .contaner .Championships{
+    background-color: rgb(0, 0, 0);
+    text-align: right;
+    direction: rtl;
+    color: white;
+    padding: 10px;
+}
+ footer .contaner .Championships h2{
+    font-size: 30px;
+    padding: 30px 5px ;
+
+}
+footer .contaner .Championships ul{
+    list-style-type: none;
+    padding: 0px 60px;
+    display:block;
+    float: right;
+}
+footer .contaner .Championships ul li{
+    padding: 5px 0px;
+}
+footer .contaner .Championships ul li:first-child{
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: -1px 3px 5px white;
+    padding: 10px 0;
+}
+ footer .contaner .EndFooter{
+     text-align: center;
+     background-color: black;
+     color: white;
+ }
+ footer .contaner .EndFooter h1{
+     font-size: 70px;
+     margin-bottom:30px; 
+ }
+ footer .contaner .EndFooter ul{
+     list-style-type: none;
+     padding: 0px 0px 50px 0;
+     border-bottom: 1px solid rgb(53, 50, 50);
+ }
+ footer .contaner .EndFooter ul li{
+     display: inline-block;
+
+ }
+ footer .contaner .EndFooter ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding:0px 10px;
+    border-right: 1px solid rgb(53, 50, 50);
+    color: white;
+ }
+
+ footer .contaner .EndFooter .icon-bar i{
+    padding: 10px;
+    margin: 35px 15px;
+    font-size: 30px;
+    color: white;
+    border: 1px solid rgb(53, 50, 50);
+ }
+/*End Footer */
